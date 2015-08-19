@@ -1,0 +1,30 @@
+<ion-view view-title="Login" hide-nav-bar="true" class="has-header">
+    <ion-content >
+        <div class="bar bar-header bar-dark">
+            <h1 class="title">Active Nutrition</h1>
+        </div>
+    </ion-content>
+    <ion-content  class="margen-arriba padding-right padding-left">
+        
+        <div class="list" ng-controller="loginCtrl">
+            <label class="item item-input item-floating-label">
+                <span class="input-label">Correo</span>
+                <input type="email" placeholder="Correo...">
+            </label>
+            <label class="item item-input item-floating-label">
+                <span class="input-label">Contraseña</span>
+                <input type="password" placeholder="Contraseña...">
+            </label>
+
+            <button class="button button-block button-positive" ng-click="verificarUsuario()">
+                Entrar
+            </button>
+
+            <a href="#/app/register" class="button button-block button-positive">
+                Registrarme
+            </a>
+        </div>
+    </ion-content>
+</ion-view>
+
+
